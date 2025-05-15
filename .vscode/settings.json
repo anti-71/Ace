@@ -1,0 +1,39 @@
+{
+  "cSpell.ignoreWords": [
+    "Pointlist",
+    "Tfidf",
+    "Vectorizer",
+    "axislabel",
+    "fontsize",
+    "itemstyle",
+    "jieba",
+    "lcut",
+    "linestyle",
+    "numpy",
+    "padx",
+    "pady",
+    "shufflecard",
+    "taobao",
+    "textcoords",
+    "textfont",
+    "tkagg",
+    "xaxis",
+    "xticks",
+    "xytext",
+    "yaxis",
+    "ylabel",
+    "yscrollcommand"
+  ],
+  "cSpell.words": [
+    "ipady",
+    "Mythread",
+    "threadapi",
+    "threadsafe",
+    "xticklabels"
+  ],
+  "java.project.sourcePaths": [
+    "Java/thread/src",
+    "Java/demo1/src",
+    "Java/thread/lib"
+  ]
+}
