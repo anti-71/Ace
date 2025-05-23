@@ -1,0 +1,20 @@
+LL(1) 语法分析过程
+
+步骤         解析栈                                                输入流                            动作
+1          $ E                                                i + i * i $                    应用 E → T E'
+2          $ E' T                                             i + i * i $                    应用 T → F T'
+3          $ E' T' F                                          i + i * i $                    应用 F → id
+4          $ E' T' id                                         i + i * i $                    匹配 +
+5          $ E' T'                                            + i * i $                      应用 T' → ε
+6          $ E'                                               + i * i $                      应用 E' → + T E'
+7          $ E' T +                                           + i * i $                      匹配 i
+8          $ E' T                                             i * i $                        应用 T → F T'
+9          $ E' T' F                                          i * i $                        应用 F → id
+10         $ E' T' id                                         i * i $                        匹配 *
+11         $ E' T'                                            * i $                          应用 T' → * F T'
+12         $ E' T' F *                                        * i $                          匹配 i
+13         $ E' T' F                                          i $                            应用 F → id
+14         $ E' T' id                                         i $                            匹配 $
+15         $ E' T'                                            $                              应用 T' → ε
+16         $ E'                                               $                              应用 E' → ε
+17         $                                                  $                              接受

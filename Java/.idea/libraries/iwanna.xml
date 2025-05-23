@@ -1,0 +1,9 @@
+<component name="libraryTable">
+  <library name="iwanna">
+    <CLASSES>
+      <root url="jar://$PROJECT_DIR$/iwanna/out/artifacts/iwanna_jar/iwanna.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

@@ -2,8 +2,13 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Java.iml" filepath="$PROJECT_DIR$/Java.iml" />
-      <module fileurl="file://$PROJECT_DIR$/Thread/Thread.iml" filepath="$PROJECT_DIR$/Thread/Thread.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/Java.iml" filepath="$PROJECT_DIR$/.idea/Java.iml" />
+      <module fileurl="file://$PROJECT_DIR$/LL1/LL1.iml" filepath="$PROJECT_DIR$/LL1/LL1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java_Study/Net/Net.iml" filepath="$PROJECT_DIR$/Java_Study/Net/Net.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java_Study/Oop/Oop.iml" filepath="$PROJECT_DIR$/Java_Study/Oop/Oop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java_Study/Stone-maze/Stone-maze.iml" filepath="$PROJECT_DIR$/Java_Study/Stone-maze/Stone-maze.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Java_Study/Thread/Thread.iml" filepath="$PROJECT_DIR$/Java_Study/Thread/Thread.iml" />
+      <module fileurl="file://$PROJECT_DIR$/iwanna/iwanna.iml" filepath="$PROJECT_DIR$/iwanna/iwanna.iml" />
     </modules>
   </component>
 </project>

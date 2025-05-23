@@ -1,13 +1,14 @@
-package com.jeunesse.demo4tcp1;
+package com.jeunesse.demo5tcp2;
 
 import java.io.DataOutputStream;
 import java.io.IOException;
 import java.io.OutputStream;
 import java.net.Socket;
+import java.util.Scanner;
 
 public class ClientDemo1 {
     public static void main(String[] args) {
-        // 目标：实现TCP通信下一发一收：客户端开发
+        // 目标：实现TCP通信下多发多收：客户端开发
         System.out.println("客户端启动...");
         // 1、创建Socket管道对象，请求与服务端的Socket链接。可靠链接
         try {
@@ -18,11 +19,20 @@ public class ClientDemo1 {
 
             // 3、特殊数据流
             DataOutputStream dos =  new DataOutputStream(os);
-            dos.writeInt(1);
-            dos.writeUTF("我想你了，你在哪儿？");
 
-            // 4、关闭资源
-            socket.close();
+            Scanner sc = new Scanner(System.in);
+            while (true) {
+                System.out.println("请输入：");
+                String msg = sc.nextLine();
+                if ("exit".equals(msg)) {
+                    System.out.println("退出成功！");
+                    socket.close(); // 关闭socket
+                    break;
+                }
+
+                dos.writeUTF(msg); // 发送数据
+                dos.flush();
+            }
         } catch (IOException e) {
             throw new RuntimeException(e);
         }

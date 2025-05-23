@@ -1,4 +1,4 @@
-package com.jeunesse.demo5tcp2;
+package com.jeunesse.demo6tcp3;
 
 import java.io.DataOutputStream;
 import java.io.IOException;
@@ -8,7 +8,7 @@ import java.util.Scanner;
 
 public class ClientDemo1 {
     public static void main(String[] args) {
-        // 目标：实现TCP通信下多发多收：客户端开发
+        // 目标：实现TCP通信下多发多收：支持多个客户端开发
         System.out.println("客户端启动...");
         // 1、创建Socket管道对象，请求与服务端的Socket链接。可靠链接
         try {

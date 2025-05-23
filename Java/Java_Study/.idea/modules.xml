@@ -4,6 +4,11 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/Java_Study.iml" filepath="$PROJECT_DIR$/Java_Study.iml" />
       <module fileurl="file://$PROJECT_DIR$/Net/Net.iml" filepath="$PROJECT_DIR$/Net/Net.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Oop/Oop.iml" filepath="$PROJECT_DIR$/Oop/Oop.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Stone-maze/Stone-maze.iml" filepath="$PROJECT_DIR$/Stone-maze/Stone-maze.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Thread/Thread.iml" filepath="$PROJECT_DIR$/Thread/Thread.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jeunesse-chat-server/jeunesse-chat-server.iml" filepath="$PROJECT_DIR$/jeunesse-chat-server/jeunesse-chat-server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/jeunesse-chat-system/jeunesse-chat-system.iml" filepath="$PROJECT_DIR$/jeunesse-chat-system/jeunesse-chat-system.iml" />
     </modules>
   </component>
 </project>

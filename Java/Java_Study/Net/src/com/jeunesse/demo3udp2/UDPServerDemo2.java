@@ -6,7 +6,7 @@ import java.net.DatagramSocket;
 public class UDPServerDemo2 {
     public static void main(String[] args) throws Exception {
         System.out.println("===服务端启动了===");
-        // 目标：完成UDP通信一发一收：服务端开发
+        // 目标：完成UDP通信多发多收：服务端开发
         // 创建接收端对象，注册端口（接韭菜的人）
         DatagramSocket socket = new DatagramSocket(8080);
 

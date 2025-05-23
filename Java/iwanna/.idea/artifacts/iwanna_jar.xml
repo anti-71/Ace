@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="iwanna:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/iwanna_jar</output-path>
+    <root id="archive" name="iwanna.jar">
+      <element id="module-output" name="iwanna" />
+    </root>
+  </artifact>
+</component>
