@@ -1,4 +1,4 @@
-package com.jeunesse;
+package com.jeunesse.jdbc;
 
 import org.junit.jupiter.api.Test;
 

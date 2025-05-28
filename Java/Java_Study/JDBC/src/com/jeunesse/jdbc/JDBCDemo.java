@@ -1,4 +1,4 @@
-package com.jeunesse;
+package com.jeunesse.jdbc;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

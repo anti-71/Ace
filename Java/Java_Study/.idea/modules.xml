@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/JDBC/JDBC.iml" filepath="$PROJECT_DIR$/JDBC/JDBC.iml" />
       <module fileurl="file://$PROJECT_DIR$/Java_Study.iml" filepath="$PROJECT_DIR$/Java_Study.iml" />
       <module fileurl="file://$PROJECT_DIR$/Net/Net.iml" filepath="$PROJECT_DIR$/Net/Net.iml" />
       <module fileurl="file://$PROJECT_DIR$/Oop/Oop.iml" filepath="$PROJECT_DIR$/Oop/Oop.iml" />
