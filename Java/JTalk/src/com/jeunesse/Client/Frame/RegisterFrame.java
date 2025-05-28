@@ -1,4 +1,4 @@
-package com.jeunesse.Client;
+package com.jeunesse.Client.Frame;
 
 import javax.swing.*;
 import java.awt.*;

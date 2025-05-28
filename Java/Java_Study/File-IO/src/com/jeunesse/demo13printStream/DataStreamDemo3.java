@@ -1,18 +1,20 @@
 package com.jeunesse.demo13printStream;
 
+import java.io.DataInputStream;
 import java.io.DataOutputStream;
+import java.io.FileInputStream;
 import java.io.FileOutputStream;
 
-public class DataStreamDemo2 {
+public class DataStreamDemo3 {
     public static void main(String[] args) {
         // 目标：特殊数据流的使用
         try (
-                DataOutputStream  dos = new DataOutputStream(new FileOutputStream("File-IO/src/data.txt"));
+                DataInputStream dis = new DataInputStream(new FileInputStream("File-IO/src/data.txt"));
                 ) {
-            dos.writeByte(34);
-            dos.writeUTF("你好");
-            dos.writeInt(100);
-            dos.writeDouble(3.14);
+            System.out.println(dis.readByte());
+            System.out.println(dis.readUTF());
+            System.out.println(dis.readInt());
+            System.out.println(dis.readDouble());
         } catch (Exception e) {
             e.printStackTrace();
         }

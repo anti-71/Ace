@@ -1,4 +1,4 @@
-package com.jeunesse.Client;
+package com.jeunesse.Client.Frame;
 
 import javax.swing.*;
 import java.awt.*;
@@ -19,41 +19,36 @@ public class FiendListFrame extends JFrame {
         initFrame();
         initComponent();
 
-        setVisible(true);
+        this.setVisible(true);
     }
 
     // 初始化组件
     private void initComponent() {
         // 个人信息区域
         JPanel infoPanel = new JPanel();
-        infoPanel.setPreferredSize(new Dimension(260, 80)); // 占 1/6 高度
+        infoPanel.setBounds(0, 0, 260, 80);
         infoPanel.setLayout(new GridLayout(3, 1));
-        infoPanel.setBorder(BorderFactory.createEmptyBorder(10, 15, 10, 15));
+        infoPanel.setBorder(BorderFactory.createEmptyBorder(5, 10, 5, 10));
 
         // 个人信息组件
         addInfoItem(infoPanel, "昵称：", Color.BLACK);
         addInfoItem(infoPanel, "ID：", new Color(100, 100, 100));
         addInfoItem(infoPanel, "手机：", new Color(150, 150, 150));
-        this.add(infoPanel, BorderLayout.NORTH);
-
-        // 功能操作区域
-        JPanel functionPanel = new JPanel();
-        functionPanel.setLayout(new BoxLayout(functionPanel, BoxLayout.Y_AXIS));
+        this.add(infoPanel);
 
         // 添加好友按钮
         JButton addBtn = new JButton("添加好友");
+        addBtn.setBounds(0, 85, 260, 35);
         addBtn.setBackground(new Color(0, 120, 215));
         addBtn.setForeground(Color.WHITE);
         addBtn.setFont(new Font("微软雅黑", Font.PLAIN, 14));
-        addBtn.setBorder(BorderFactory.createEmptyBorder(5, 15, 5, 15));
         addBtn.setFocusPainted(false);
-        addBtn.setPreferredSize(new Dimension(260, 35));
-        functionPanel.add(addBtn);
-        this.add(functionPanel, BorderLayout.CENTER);
+        this.add(addBtn);
 
         // 选项卡按钮
-        JPanel tabPanel = new JPanel();
-        tabPanel.setLayout(new GridLayout(1, 3));
+        JPanel tabPanel = new JPanel(new GridLayout(1, 3));
+        tabPanel.setBounds(0, 120,260, 30);
+        tabPanel.setBackground(Color.WHITE);
 
         JToggleButton[] tabs = {
                 new JToggleButton("好友"),
@@ -65,15 +60,15 @@ public class FiendListFrame extends JFrame {
         for (JToggleButton tab : tabs) {
             tab.setBackground(Color.WHITE);
             tab.setForeground(Color.DARK_GRAY);
-            tab.setFont(new Font("宋体", Font.PLAIN, 13));
+            tab.setFont(new Font("微软雅黑", Font.PLAIN, 14));
             tab.setBorder(BorderFactory.createCompoundBorder(
                     BorderFactory.createMatteBorder(0, 0, 2, 0, Color.LIGHT_GRAY),
                     BorderFactory.createEmptyBorder(5, 0, 5, 0)
             ));
-            tab.setSelected(true);
             tabGroup.add(tab);
             tabPanel.add(tab);
         }
+        this.add(tabPanel);
     }
 
     // 创建信息项组件
@@ -102,12 +97,10 @@ public class FiendListFrame extends JFrame {
         this.setLocation(x, y);
         this.setLayout(new BorderLayout(0, 4));
 
-        // 主面板使用垂直布局
-        JPanel mainPanel = new JPanel();
-        mainPanel.setLayout(new BoxLayout(mainPanel, BoxLayout.Y_AXIS));
-        mainPanel.setBackground(new Color(240, 240, 240));
+        this.setLayout(null);
+        this.setBackground(new Color(240, 240, 240));
         this.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.setResizable(false);
-        this.getContentPane().setBackground(Color.WHITE);
+        this.setBackground(Color.WHITE);
     }
 }
